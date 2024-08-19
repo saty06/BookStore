@@ -13,7 +13,7 @@ const routes = (): IRouter => {
   router.get('/', (req, res) => {
     res.json('Welcome');
   });
-  router.use('/users', new userRoute().getRoutes());
+  // router.use('/users', new userRoute().getRoutes());
   router.use('/bookstore', new bookUserRoutters().getRouter())
 
   return router;

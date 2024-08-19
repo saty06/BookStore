@@ -53,3 +53,248 @@ info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T0
 info: Connected to the database. {"timestamp":"2024-08-19T05:46:40.422Z"}
 info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T05:50:11.474Z"}
 info: Connected to the database. {"timestamp":"2024-08-19T05:50:11.723Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T06:00:44.377Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T06:00:45.020Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:09:05.179Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:09:05.636Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:09:46.646Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:09:46.999Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" is required 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-08-19T07:13:24.224Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" is required 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-08-19T07:13:58.624Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:16:58.505Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:16:58.904Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:17:18.765Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:17:19.032Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:17:45.109Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:22:13.373Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:22:13.891Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:22:52.326Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:22:52.590Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:25:12.154Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:25:12.577Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:27:48.437Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:27:48.820Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:30:26.564Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:30:27.014Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:31:31.207Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:31:31.600Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:33:40.321Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:33:40.728Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:36:25.990Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:36:26.244Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:37:57.693Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:37:57.966Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:40:37.669Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:40:37.942Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:42:32.493Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:42:32.881Z"}
+error: uncaughtException: Cannot set headers after they are sent to the client
+Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:659:11)
+    at ServerResponse.header (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\node_modules\express\lib\response.js:795:10)
+    at ServerResponse.send (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\node_modules\express\lib\response.js:175:12)
+    at ServerResponse.json (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\node_modules\express\lib\response.js:279:15)
+    at bookUsercontroller.<anonymous> (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\src\controllers\bookuser.controller.ts:67:46)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\src\controllers\bookuser.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {"date":"Mon Aug 19 2024 13:12:37 GMT+0530 (India Standard Time)","error":{"code":"ERR_HTTP_HEADERS_SENT"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":182300.031},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","./src/index.ts"],"cwd":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":97860,"external":2400663,"heapTotal":54841344,"heapUsed":27083632,"rss":73379840},"pid":17032,"uid":null,"version":"v20.14.0"},"stack":"Error: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (node:_http_outgoing:659:11)\n    at ServerResponse.header (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js:795:10)\n    at ServerResponse.send (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js:175:12)\n    at ServerResponse.json (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js:279:15)\n    at bookUsercontroller.<anonymous> (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts:67:46)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2024-08-19T07:42:37.333Z","trace":[{"column":11,"file":"node:_http_outgoing","function":"ServerResponse.setHeader","line":659,"method":"setHeader","native":false},{"column":10,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js","function":"ServerResponse.header","line":795,"method":"header","native":false},{"column":12,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js","function":"ServerResponse.send","line":175,"method":"send","native":false},{"column":15,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js","function":"ServerResponse.json","line":279,"method":"json","native":false},{"column":46,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts","function":null,"line":67,"method":null,"native":false},{"column":null,"file":null,"function":"Generator.next","line":null,"method":"next","native":false},{"column":58,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts","function":"fulfilled","line":5,"method":null,"native":false},{"column":5,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":95,"method":null,"native":false}]}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:46:11.050Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:46:11.289Z"}
+error: uncaughtException: Cannot set headers after they are sent to the client
+Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:659:11)
+    at ServerResponse.header (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\node_modules\express\lib\response.js:795:10)
+    at ServerResponse.send (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\node_modules\express\lib\response.js:175:12)
+    at ServerResponse.json (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\node_modules\express\lib\response.js:279:15)
+    at bookUsercontroller.<anonymous> (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\src\controllers\bookuser.controller.ts:69:46)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\src\controllers\bookuser.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {"date":"Mon Aug 19 2024 13:16:17 GMT+0530 (India Standard Time)","error":{"code":"ERR_HTTP_HEADERS_SENT"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":182520.281},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","./src/index.ts"],"cwd":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":97987,"external":2400790,"heapTotal":55365632,"heapUsed":23383400,"rss":73003008},"pid":9732,"uid":null,"version":"v20.14.0"},"stack":"Error: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (node:_http_outgoing:659:11)\n    at ServerResponse.header (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js:795:10)\n    at ServerResponse.send (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js:175:12)\n    at ServerResponse.json (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js:279:15)\n    at bookUsercontroller.<anonymous> (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts:69:46)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2024-08-19T07:46:17.574Z","trace":[{"column":11,"file":"node:_http_outgoing","function":"ServerResponse.setHeader","line":659,"method":"setHeader","native":false},{"column":10,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js","function":"ServerResponse.header","line":795,"method":"header","native":false},{"column":12,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js","function":"ServerResponse.send","line":175,"method":"send","native":false},{"column":15,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js","function":"ServerResponse.json","line":279,"method":"json","native":false},{"column":46,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts","function":null,"line":69,"method":null,"native":false},{"column":null,"file":null,"function":"Generator.next","line":null,"method":"next","native":false},{"column":58,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts","function":"fulfilled","line":5,"method":null,"native":false},{"column":5,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":95,"method":null,"native":false}]}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:47:05.747Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:47:06.105Z"}
+error: uncaughtException: Cannot set headers after they are sent to the client
+Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:659:11)
+    at ServerResponse.header (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\node_modules\express\lib\response.js:795:10)
+    at ServerResponse.send (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\node_modules\express\lib\response.js:175:12)
+    at ServerResponse.json (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\node_modules\express\lib\response.js:279:15)
+    at bookUsercontroller.<anonymous> (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\src\controllers\bookuser.controller.ts:71:46)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\src\controllers\bookuser.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {"date":"Mon Aug 19 2024 13:17:09 GMT+0530 (India Standard Time)","error":{"code":"ERR_HTTP_HEADERS_SENT"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":182571.734},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","./src/index.ts"],"cwd":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":98032,"external":2400835,"heapTotal":55365632,"heapUsed":23088920,"rss":72220672},"pid":16504,"uid":null,"version":"v20.14.0"},"stack":"Error: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (node:_http_outgoing:659:11)\n    at ServerResponse.header (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js:795:10)\n    at ServerResponse.send (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js:175:12)\n    at ServerResponse.json (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js:279:15)\n    at bookUsercontroller.<anonymous> (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts:71:46)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2024-08-19T07:47:09.040Z","trace":[{"column":11,"file":"node:_http_outgoing","function":"ServerResponse.setHeader","line":659,"method":"setHeader","native":false},{"column":10,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js","function":"ServerResponse.header","line":795,"method":"header","native":false},{"column":12,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js","function":"ServerResponse.send","line":175,"method":"send","native":false},{"column":15,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js","function":"ServerResponse.json","line":279,"method":"json","native":false},{"column":46,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts","function":null,"line":71,"method":null,"native":false},{"column":null,"file":null,"function":"Generator.next","line":null,"method":"next","native":false},{"column":58,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts","function":"fulfilled","line":5,"method":null,"native":false},{"column":5,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":95,"method":null,"native":false}]}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:48:46.620Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:48:46.941Z"}
+error: uncaughtException: Cannot set headers after they are sent to the client
+Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:659:11)
+    at ServerResponse.header (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\node_modules\express\lib\response.js:795:10)
+    at ServerResponse.send (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\node_modules\express\lib\response.js:175:12)
+    at ServerResponse.json (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\node_modules\express\lib\response.js:279:15)
+    at bookUsercontroller.<anonymous> (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\src\controllers\bookuser.controller.ts:71:46)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\src\controllers\bookuser.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {"date":"Mon Aug 19 2024 13:18:48 GMT+0530 (India Standard Time)","error":{"code":"ERR_HTTP_HEADERS_SENT"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":182671.156},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","./src/index.ts"],"cwd":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":98026,"external":2400829,"heapTotal":55365632,"heapUsed":23188776,"rss":73318400},"pid":8648,"uid":null,"version":"v20.14.0"},"stack":"Error: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (node:_http_outgoing:659:11)\n    at ServerResponse.header (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js:795:10)\n    at ServerResponse.send (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js:175:12)\n    at ServerResponse.json (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js:279:15)\n    at bookUsercontroller.<anonymous> (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts:71:46)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2024-08-19T07:48:48.455Z","trace":[{"column":11,"file":"node:_http_outgoing","function":"ServerResponse.setHeader","line":659,"method":"setHeader","native":false},{"column":10,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js","function":"ServerResponse.header","line":795,"method":"header","native":false},{"column":12,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js","function":"ServerResponse.send","line":175,"method":"send","native":false},{"column":15,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js","function":"ServerResponse.json","line":279,"method":"json","native":false},{"column":46,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts","function":null,"line":71,"method":null,"native":false},{"column":null,"file":null,"function":"Generator.next","line":null,"method":"next","native":false},{"column":58,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts","function":"fulfilled","line":5,"method":null,"native":false},{"column":5,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":95,"method":null,"native":false}]}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:49:24.042Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:49:24.433Z"}
+error: uncaughtException: Cannot set headers after they are sent to the client
+Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:659:11)
+    at ServerResponse.header (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\node_modules\express\lib\response.js:795:10)
+    at ServerResponse.send (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\node_modules\express\lib\response.js:175:12)
+    at ServerResponse.json (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\node_modules\express\lib\response.js:279:15)
+    at bookUsercontroller.<anonymous> (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\src\controllers\bookuser.controller.ts:72:46)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\src\controllers\bookuser.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {"date":"Mon Aug 19 2024 13:19:26 GMT+0530 (India Standard Time)","error":{"code":"ERR_HTTP_HEADERS_SENT"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":182708.906},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","./src/index.ts"],"cwd":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":98050,"external":2400853,"heapTotal":55103488,"heapUsed":23099968,"rss":72667136},"pid":5852,"uid":null,"version":"v20.14.0"},"stack":"Error: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (node:_http_outgoing:659:11)\n    at ServerResponse.header (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js:795:10)\n    at ServerResponse.send (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js:175:12)\n    at ServerResponse.json (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js:279:15)\n    at bookUsercontroller.<anonymous> (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts:72:46)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2024-08-19T07:49:26.208Z","trace":[{"column":11,"file":"node:_http_outgoing","function":"ServerResponse.setHeader","line":659,"method":"setHeader","native":false},{"column":10,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js","function":"ServerResponse.header","line":795,"method":"header","native":false},{"column":12,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js","function":"ServerResponse.send","line":175,"method":"send","native":false},{"column":15,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js","function":"ServerResponse.json","line":279,"method":"json","native":false},{"column":46,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts","function":null,"line":72,"method":null,"native":false},{"column":null,"file":null,"function":"Generator.next","line":null,"method":"next","native":false},{"column":58,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts","function":"fulfilled","line":5,"method":null,"native":false},{"column":5,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":95,"method":null,"native":false}]}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:50:39.905Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:50:40.256Z"}
+error: uncaughtException: Cannot set headers after they are sent to the client
+Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:659:11)
+    at ServerResponse.header (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\node_modules\express\lib\response.js:795:10)
+    at ServerResponse.send (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\node_modules\express\lib\response.js:175:12)
+    at ServerResponse.json (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\node_modules\express\lib\response.js:279:15)
+    at bookUsercontroller.<anonymous> (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\src\controllers\bookuser.controller.ts:72:46)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\src\controllers\bookuser.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {"date":"Mon Aug 19 2024 13:20:44 GMT+0530 (India Standard Time)","error":{"code":"ERR_HTTP_HEADERS_SENT"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":182787.5},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","./src/index.ts"],"cwd":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":98035,"external":2400838,"heapTotal":55365632,"heapUsed":23335424,"rss":72888320},"pid":5192,"uid":null,"version":"v20.14.0"},"stack":"Error: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (node:_http_outgoing:659:11)\n    at ServerResponse.header (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js:795:10)\n    at ServerResponse.send (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js:175:12)\n    at ServerResponse.json (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js:279:15)\n    at bookUsercontroller.<anonymous> (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts:72:46)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2024-08-19T07:50:44.804Z","trace":[{"column":11,"file":"node:_http_outgoing","function":"ServerResponse.setHeader","line":659,"method":"setHeader","native":false},{"column":10,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js","function":"ServerResponse.header","line":795,"method":"header","native":false},{"column":12,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js","function":"ServerResponse.send","line":175,"method":"send","native":false},{"column":15,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js","function":"ServerResponse.json","line":279,"method":"json","native":false},{"column":46,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts","function":null,"line":72,"method":null,"native":false},{"column":null,"file":null,"function":"Generator.next","line":null,"method":"next","native":false},{"column":58,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts","function":"fulfilled","line":5,"method":null,"native":false},{"column":5,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":95,"method":null,"native":false}]}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:53:42.822Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:53:43.277Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:53:47.591Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:53:47.856Z"}
+error: uncaughtException: Cannot set headers after they are sent to the client
+Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:659:11)
+    at ServerResponse.header (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\node_modules\express\lib\response.js:795:10)
+    at ServerResponse.send (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\node_modules\express\lib\response.js:175:12)
+    at ServerResponse.json (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\node_modules\express\lib\response.js:279:15)
+    at bookUsercontroller.<anonymous> (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\src\controllers\bookuser.controller.ts:76:46)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\src\controllers\bookuser.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {"date":"Mon Aug 19 2024 13:23:58 GMT+0530 (India Standard Time)","error":{"code":"ERR_HTTP_HEADERS_SENT"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":182981.484},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","./src/index.ts"],"cwd":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":45188,"external":2344799,"heapTotal":21549056,"heapUsed":19588040,"rss":55738368},"pid":11560,"uid":null,"version":"v20.14.0"},"stack":"Error: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (node:_http_outgoing:659:11)\n    at ServerResponse.header (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js:795:10)\n    at ServerResponse.send (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js:175:12)\n    at ServerResponse.json (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js:279:15)\n    at bookUsercontroller.<anonymous> (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts:76:46)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2024-08-19T07:53:58.796Z","trace":[{"column":11,"file":"node:_http_outgoing","function":"ServerResponse.setHeader","line":659,"method":"setHeader","native":false},{"column":10,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js","function":"ServerResponse.header","line":795,"method":"header","native":false},{"column":12,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js","function":"ServerResponse.send","line":175,"method":"send","native":false},{"column":15,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\node_modules\\express\\lib\\response.js","function":"ServerResponse.json","line":279,"method":"json","native":false},{"column":46,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts","function":null,"line":76,"method":null,"native":false},{"column":null,"file":null,"function":"Generator.next","line":null,"method":"next","native":false},{"column":58,"file":"C:\\Users\\admin\\Desktop\\fundoo_Notes\\newBookStore\\BookStore\\src\\controllers\\bookuser.controller.ts","function":"fulfilled","line":5,"method":null,"native":false},{"column":5,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":95,"method":null,"native":false}]}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:58:35.559Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:58:35.818Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T07:59:46.877Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T07:59:47.148Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:00:39.899Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:00:40.152Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:01:45.433Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:01:45.734Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:04:49.711Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:04:50.163Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:04:55.413Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:04:55.878Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:07:42.768Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:07:43.365Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:10:05.415Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:10:05.711Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:11:01.753Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:11:02.118Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:11:44.250Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:11:44.569Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:12:58.450Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:12:58.713Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:16:11.112Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:16:11.406Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:17:12.210Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:17:12.484Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:17:26.706Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:17:27.133Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:22:02.069Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:22:02.360Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:22:17.458Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:22:17.717Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:22:48.219Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:22:48.530Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:23:19.558Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:23:19.823Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:29:46.855Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:29:47.239Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:30:45.233Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:30:45.514Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:31:10.454Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:31:10.740Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:34:05.335Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:34:05.777Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:34:23.617Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:34:24.290Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:34:29.700Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:34:29.974Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:35:19.699Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:35:20.079Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:39:23.172Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:39:23.441Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:43:43.037Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:43:43.275Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:44:33.996Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:44:34.451Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:46:08.632Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:46:08.988Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:46:47.621Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:46:48.051Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:50:11.421Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:50:11.754Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:52:06.775Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:52:07.130Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:54:55.395Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:54:55.629Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:55:19.851Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:55:20.103Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T08:59:13.802Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T08:59:14.205Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T09:01:33.413Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T09:01:33.696Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T09:02:28.105Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T09:02:28.374Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T09:02:55.185Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T09:02:55.548Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T09:03:55.919Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T09:03:56.275Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T09:08:09.250Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T09:08:09.583Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T09:10:02.697Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T09:10:03.038Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T09:11:48.830Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T09:11:49.110Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T09:19:08.564Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T09:19:08.811Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T09:19:38.361Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T09:19:38.597Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T09:28:06.868Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T09:28:07.115Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T09:37:38.197Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T09:37:38.735Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T09:39:32.321Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T09:39:32.573Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T09:40:08.050Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T09:40:08.299Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T09:40:29.195Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T09:40:29.669Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T10:36:01.766Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T10:36:01.990Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T10:39:21.579Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T10:39:21.893Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T10:40:49.163Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T10:40:49.429Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T10:41:38.701Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T10:41:39.017Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T10:42:48.478Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T10:42:48.729Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T10:45:30.396Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T10:45:30.624Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T10:46:27.776Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T10:46:28.020Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-19T10:47:48.467Z"}
+info: Connected to the database. {"timestamp":"2024-08-19T10:47:48.705Z"}

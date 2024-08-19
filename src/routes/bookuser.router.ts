@@ -13,9 +13,9 @@ class bookUserRoutters{
     }
     public routers = ()=>{
         // user routes 
-        this.router.post('/user', this.BookUserController.newBookUserCon)
-        this.router.post('/user/login', this.BookUserMid.bookAdminRollMid,this.BookUserController.getBookUsercon);
-        this.router.post('/user/update/:id', this.BookUserController.updateBookUsercon);
+        this.router.post('/user', this.BookUserMid.bookuserRollMid, this.BookUserController.newBookUserCon)
+        this.router.post('/user/login', this.BookUserMid.bookuserRollMid,this.BookUserController.getBookUsercon);
+        this.router.post('/user/update/', this.BookUserMid.bookuserRollMid,  this.BookUserController.updateBookUsercon);
         this.router.post('/user/delete/:id', this.BookUserController.deletBookUsercon)
         // admin routes
         this.router.post('/admin', this.BookUserController.newBookUserCon)
