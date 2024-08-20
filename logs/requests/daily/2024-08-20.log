@@ -1,0 +1,70 @@
+info: ::1 - - [20/Aug/2024:11:44:48 +0000] "POST /api/v1/ HTTP/1.1" 404 47 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:11:45:25 +0000] "POST /api/v1/books/ HTTP/1.1" 404 47 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:11:49:38 +0000] "POST /api/v1/users/ HTTP/1.1" 500 60 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:11:50:32 +0000] "POST /api/v1/users/ HTTP/1.1" 500 59 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:11:50:46 +0000] "POST /api/v1/users/ HTTP/1.1" 201 50 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:11:52:48 +0000] "POST /api/v1/users/login HTTP/1.1" 200 79 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:11:53:35 +0000] "POST /api/v1/users/login HTTP/1.1" 200 79 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:11:54:44 +0000] "POST /api/v1/users HTTP/1.1" 500 59 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:11:54:54 +0000] "POST /api/v1/users HTTP/1.1" 201 50 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:11:57:43 +0000] "POST /api/v1/users HTTP/1.1" 201 334 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:11:58:56 +0000] "POST /api/v1/users/login HTTP/1.1" 200 510 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:02:45 +0000] "POST /api/v1/order HTTP/1.1" 500 89 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:03:14 +0000] "POST /api/v1/order HTTP/1.1" 500 89 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:03:57 +0000] "POST /api/v1/order HTTP/1.1" 500 89 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:04:04 +0000] "POST /api/v1/order HTTP/1.1" 500 89 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:05:41 +0000] "POST /api/v1/order HTTP/1.1" 500 89 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:06:37 +0000] "GET /api/v1/order HTTP/1.1" 201 60 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:12:48 +0000] "POST /api/v1/order HTTP/1.1" 500 86 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:13:14 +0000] "POST /api/v1/order HTTP/1.1" 500 86 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:13:57 +0000] "POST /api/v1/order/ HTTP/1.1" 500 86 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:14:36 +0000] "POST /api/v1/order/ HTTP/1.1" 500 86 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:15:00 +0000] "POST /api/v1/order/ HTTP/1.1" 500 86 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:15:48 +0000] "POST /api/v1/order/ HTTP/1.1" 500 86 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:18:00 +0000] "POST /api/v1/order HTTP/1.1" 500 86 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:18:05 +0000] "POST /api/v1/order/ HTTP/1.1" 500 86 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:19:31 +0000] "POST /api/v1/order/ HTTP/1.1" 500 86 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:19:40 +0000] "POST /api/v1/order HTTP/1.1" 500 86 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:19:46 +0000] "POST /api/v1/order/ HTTP/1.1" 500 86 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:20:35 +0000] "POST /api/v1/order HTTP/1.1" 500 86 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:21:28 +0000] "POST /api/v1/order HTTP/1.1" 500 86 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:23:00 +0000] "POST /api/v1/order HTTP/1.1" 500 86 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:23:42 +0000] "POST /api/v1/order HTTP/1.1" 500 86 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:25:40 +0000] "POST /api/v1/order HTTP/1.1" 500 86 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:26:39 +0000] "POST /api/v1/order HTTP/1.1" 500 86 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:27:43 +0000] "POST /api/v1/order HTTP/1.1" 500 86 "-" "PostmanRuntime/7.41.1"
+

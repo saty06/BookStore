@@ -2,24 +2,25 @@ import { Sequelize } from 'sequelize';
 import Logger from './logger';
 
 import dotenv from 'dotenv';
+import config from './config';
 dotenv.config();
 
 export { DataTypes } from 'sequelize';
 
 const logger = Logger.logger;
 
-let DATABASE = process.env.DATABASE;
-let USERNAME = process.env.DB_USERNAME;
-let PASSWORD = process.env.PASSWORD;
-let HOST = process.env.HOST;
-let PORT = parseInt(process.env.PORT);
+let DATABASE = config.development.database;
+let USERNAME = config.development.username;
+let PASSWORD = config.development.password;
+let HOST = config.development.host;
+let PORT = parseInt(config.development.port);
 
 if (process.env.NODE_ENV === 'test') {
-  DATABASE = process.env.DATABASE_TEST;
-  USERNAME = process.env.USERNAME_TEST;
-  PASSWORD = process.env.PASSWORD_TEST;
-  HOST = process.env.HOST_TEST;
-  PORT = parseInt(process.env.PORT_TEST);
+  DATABASE = config.test.database;
+  USERNAME = config.test.username;
+  PASSWORD = config.test.password;
+  HOST = config.test.host;
+  PORT = parseInt(config.test.port);
 }
 
 const sequelize = new Sequelize(DATABASE, USERNAME, PASSWORD, {
@@ -43,6 +44,6 @@ sequelize
     logger.error('Could not connect to the database.', error);
   });
 
-sequelize.sync( );
+sequelize.sync();
 
 export default sequelize;

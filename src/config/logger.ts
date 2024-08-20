@@ -2,9 +2,7 @@ import winston, { format } from 'winston';
 import 'winston-daily-rotate-file';
 
 class Logger {
-  /**
-   * Logger handles all logs in the application
-   */
+
   static logger = winston.createLogger({
     format: format.combine(format.timestamp(), format.simple()),
     transports: [
@@ -18,17 +16,21 @@ class Logger {
         level: 'info',
         handleExceptions: true
       }),
-      new winston.transports.DailyRotateFile({
-        maxFiles: '14d',
-        level: 'info',
-        dirname: 'logs/server/daily',
-        datePattern: 'YYYY-MM-DD',
-        filename: '%DATE%.log'
+      new winston.transports.Console({
+        level: 'error',
+        handleExceptions: true
       }),
       new winston.transports.Console({
-        level: 'debug',
+        level: 'info',
         handleExceptions: true
       })
+      //new winston.transports.DailyRotateFile({
+        //   maxFiles: '14d',
+        //   level: 'info',
+        //   dirname: 'logs/server/daily',
+        //   datePattern: 'YYYY-MM-DD',
+        //   filename: '%DATE%.log'
+        // }),
     ]
   });
 

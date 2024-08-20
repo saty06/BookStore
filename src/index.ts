@@ -11,6 +11,10 @@ import Logger from './config/logger';
 
 import morgan from 'morgan';
 
+
+import swaggerUi from 'swagger-ui-express';
+const swaggerDocument = require('./doc/swagger-output.json');
+
 class App {
   public app: Application;
   public host: string | number;
@@ -43,6 +47,7 @@ class App {
 
   public initializeRoutes(): void {
     this.app.use(`/api/${this.api_version}`, routes());
+    this.app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
   }
 
   public initializeErrorHandlers(): void {
