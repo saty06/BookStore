@@ -1,5 +1,5 @@
 import express, { IRouter } from 'express';
-import wishlistController from '../controllers/wishlist.controller';
+import wishlistController from '../controllers/storewishlist.controller';
 import { userAuth } from '../middlewares/auth.middleware';
 
 class WishlistController {

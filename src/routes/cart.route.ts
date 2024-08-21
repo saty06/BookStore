@@ -1,5 +1,5 @@
 import express, { IRouter } from 'express';
-import cartController from '../controllers/cart.controller';
+import cartController from '../controllers/storecart.controller';
 import { userAuth } from '../middlewares/auth.middleware';
 
 class CartRoutes {

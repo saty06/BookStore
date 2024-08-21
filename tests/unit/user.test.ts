@@ -1,20 +1,8 @@
-// import { expect } from 'chai';
-// import UserService from '../../src/services/user.service';
-
-// describe('User', () => {
-//   describe('Get Users', () => {
-//     it('should return empty array', async () => {
-//       const result = await new UserService().getAllUsers();
-//       expect(result).to.be.an('array');
-//     });
-//   });
-// });
 import { expect } from 'chai';
 import sinon from 'sinon';
-import UserService from '../../src/services/user.service';
+import UserService from '../../src/services/storeuser.service';
 import bcrypt from 'bcrypt';
 import { IUser } from '../../src/interfaces/user.interface';
-
 describe('UserService', () => {
   let userService: UserService;
   let mockUserModel: any;
@@ -47,7 +35,7 @@ describe('UserService', () => {
   afterEach(() => {
     sinon.restore();
   });
-
+ /// new user 
   describe('newUser', () => {
     it('should create a new user', async () => {
       const mockUser = { id: 1, firstName: 'satya', email: 'satya@example.com' };
@@ -68,7 +56,7 @@ describe('UserService', () => {
       expect(mockLogger.error.calledWith('[Logger] User Services: Register User:', error)).to.be.true;
     });
   });
-
+  // get user means login 
   describe('getUser', () => {
     it('should return user with valid credentials', async () => {
       const mockUser = { id: 1, email: 'satya@example.com', password: await bcrypt.hash('123', 10), role: 'user' };
@@ -77,7 +65,7 @@ describe('UserService', () => {
 
       const result = await userService.getUser('satya@example.com', '123', 'user');
       expect(result).to.have.property('token', 'mockToken');
-//expect(result.data).to.have.property('dataValues').that.includes({ email: 'john.doe@example.com' });
+//expect(result.data).to.have.property('dataValues').that.includes({ email: 'satya@example.com' });
     });
 
     it('should return "Invalid Credentials" if credentials are incorrect', async () => {
@@ -97,7 +85,7 @@ describe('UserService', () => {
       expect(mockLogger.error.calledWith('[Logger] User Services: Login User:', error)).to.be.true;
     });
   });
-
+// update user 
   describe('updateUser', () => {
     it('should update a user', async () => {
       const mockUser = { id: 1, firstName: 'satya', email: 'satya@example.com' };
@@ -118,7 +106,7 @@ describe('UserService', () => {
       expect(mockUserModel.destroy.calledOnce).to.be.true;
     });
   });
-
+// get all user to the admin 
   describe('getAllUsers', () => {
     it('should return an array of users', async () => {
       const mockUsers: IUser[] = [

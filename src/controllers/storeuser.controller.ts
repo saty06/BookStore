@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import HttpStatus from 'http-status-codes';
-import wishlistService from '../services/wishlist.service';
+import userService from '../services/storeuser.service';
 
 import { Request, Response, NextFunction } from 'express';
 
 class UserController {
-  public WishlistService = new wishlistService();
+  public UserService = new userService();
 
   /**
    * Controller to get all users available
@@ -13,13 +13,13 @@ class UserController {
    * @param {object} Response - response object
    * @param {Function} NextFunction
    */
-  public createWishlist = async (
+  public getAllUsers = async (
     req: Request,
     res: Response,
     next: NextFunction
   ): Promise<any> => {
     try {
-      const data = await this.WishlistService.createWishlist(req.body);
+      const data = await this.UserService.getAllUsers();
       res.status(HttpStatus.OK).json({
         code: HttpStatus.OK,
         data: data,
@@ -36,13 +36,13 @@ class UserController {
    * @param {object} Response - response object
    * @param {Function} NextFunction
    */
-  public deleteWishlist = async (
+  public getUser = async (
     req: Request,
     res: Response,
     next: NextFunction
   ): Promise<any> => {
     try {
-      const data = await this.WishlistService.deleteWishlist(req.body);
+      const data = await this.UserService.getUser(req.body.email, req.body.password, req.body.role);
       res.status(HttpStatus.OK).json({
         code: HttpStatus.OK,
         data: data,
@@ -59,17 +59,63 @@ class UserController {
    * @param {object} Response - response object
    * @param {Function} NextFunction
    */
-  public getWishlist = async (
+  public newUser = async (
     req: Request,
     res: Response,
     next: NextFunction
   ): Promise<any> => {
     try {
-      const data = await this.WishlistService.getWishlist(req.body);
+      const data = await this.UserService.newUser(req.body);
       res.status(HttpStatus.CREATED).json({
         code: HttpStatus.CREATED,
         data: data,
         message: 'User created successfully'
+      });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /**
+   * Controller to update a user
+   * @param  {object} Request - request object
+   * @param {object} Response - response object
+   * @param {Function} NextFunction
+   */
+  public updateUser = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ): Promise<any> => {
+    try {
+      const data = await this.UserService.updateUser(req.params.id, req.body);
+      res.status(HttpStatus.ACCEPTED).json({
+        code: HttpStatus.ACCEPTED,
+        data: data,
+        message: 'User updated successfully'
+      });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /**
+   * Controller to delete a user
+   * @param  {object} Request - request object
+   * @param {object} Response - response object
+   * @param {Function} NextFunction
+   */
+  public deleteUser = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ): Promise<any> => {
+    try {
+      await this.UserService.deleteUser(req.params.id);
+      res.status(HttpStatus.OK).json({
+        code: HttpStatus.OK,
+        data: {},
+        message: 'User deleted successfully'
       });
     } catch (error) {
       next(error);

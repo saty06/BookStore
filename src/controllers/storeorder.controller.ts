@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import HttpStatus from 'http-status-codes';
-import orderService from '../services/order.service';
+import orderService from '../services/storeorder.service';
 
 import { Request, Response, NextFunction } from 'express';
 

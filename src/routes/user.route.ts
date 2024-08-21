@@ -1,5 +1,5 @@
 import express, { IRouter } from 'express';
-import userController from '../controllers/user.controller';
+import userController from '../controllers/storeuser.controller';
 import userValidator from '../validators/user.validator';
 import { userAuth } from '../middlewares/auth.middleware';
 

@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import HttpStatus from 'http-status-codes';
-import userService from '../services/user.service';
+import bookService from '../services/storebook.service';
 
 import { Request, Response, NextFunction } from 'express';
 
-class UserController {
-  public UserService = new userService();
+class BookController {
+  public BookService = new bookService();
 
   /**
    * Controller to get all users available
@@ -13,13 +13,13 @@ class UserController {
    * @param {object} Response - response object
    * @param {Function} NextFunction
    */
-  public getAllUsers = async (
+  public getAllBook = async (
     req: Request,
     res: Response,
     next: NextFunction
   ): Promise<any> => {
     try {
-      const data = await this.UserService.getAllUsers();
+      const data = await this.BookService.getAllBook();
       res.status(HttpStatus.OK).json({
         code: HttpStatus.OK,
         data: data,
@@ -36,17 +36,40 @@ class UserController {
    * @param {object} Response - response object
    * @param {Function} NextFunction
    */
-  public getUser = async (
+  public getBookAdmin = async (
     req: Request,
     res: Response,
     next: NextFunction
   ): Promise<any> => {
     try {
-      const data = await this.UserService.getUser(req.body.email, req.body.password, req.body.role);
+      const data = await this.BookService.getBookAdmin(req.params.adminid);
       res.status(HttpStatus.OK).json({
         code: HttpStatus.OK,
         data: data,
         message: 'User fetched successfully'
+      });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+ /**
+   * Controller to update a user
+   * @param  {object} Request - request object
+   * @param {object} Response - response object
+   * @param {Function} NextFunction
+   */
+ public getBookId = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ): Promise<any> => {
+    try {
+      const data = await this.BookService.getBookId(req.params.bookid);
+      res.status(HttpStatus.ACCEPTED).json({
+        code: HttpStatus.ACCEPTED,
+        data: data,
+        message: 'User updated successfully'
       });
     } catch (error) {
       next(error);
@@ -59,13 +82,13 @@ class UserController {
    * @param {object} Response - response object
    * @param {Function} NextFunction
    */
-  public newUser = async (
+  public createBook = async (
     req: Request,
     res: Response,
     next: NextFunction
   ): Promise<any> => {
     try {
-      const data = await this.UserService.newUser(req.body);
+      const data = await this.BookService.createBook(req.body);
       res.status(HttpStatus.CREATED).json({
         code: HttpStatus.CREATED,
         data: data,
@@ -77,22 +100,22 @@ class UserController {
   };
 
   /**
-   * Controller to update a user
+   * Controller to create new user
    * @param  {object} Request - request object
    * @param {object} Response - response object
    * @param {Function} NextFunction
    */
-  public updateUser = async (
+  public updateBook = async (
     req: Request,
     res: Response,
     next: NextFunction
   ): Promise<any> => {
     try {
-      const data = await this.UserService.updateUser(req.params.id, req.body);
-      res.status(HttpStatus.ACCEPTED).json({
-        code: HttpStatus.ACCEPTED,
+      const data = await this.BookService.updateBook(req.params.bookid, req.body);
+      res.status(HttpStatus.CREATED).json({
+        code: HttpStatus.CREATED,
         data: data,
-        message: 'User updated successfully'
+        message: 'User created successfully'
       });
     } catch (error) {
       next(error);
@@ -105,13 +128,13 @@ class UserController {
    * @param {object} Response - response object
    * @param {Function} NextFunction
    */
-  public deleteUser = async (
+  public deleteBook = async (
     req: Request,
     res: Response,
     next: NextFunction
   ): Promise<any> => {
     try {
-      await this.UserService.deleteUser(req.params.id);
+      await this.BookService.deleteBook(req.params.bookid);
       res.status(HttpStatus.OK).json({
         code: HttpStatus.OK,
         data: {},
@@ -123,4 +146,4 @@ class UserController {
   };
 }
 
-export default UserController;
+export default BookController;
