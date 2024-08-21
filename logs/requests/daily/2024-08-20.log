@@ -68,3 +68,11 @@ info: ::1 - - [20/Aug/2024:12:26:39 +0000] "POST /api/v1/order HTTP/1.1" 500 86 
 
 info: ::1 - - [20/Aug/2024:12:27:43 +0000] "POST /api/v1/order HTTP/1.1" 500 86 "-" "PostmanRuntime/7.41.1"
 
+info: ::1 - - [20/Aug/2024:12:28:37 +0000] "POST /api/v1/order HTTP/1.1" 500 86 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:31:27 +0000] "POST /api/v1/users/admin HTTP/1.1" 201 336 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:32:04 +0000] "POST /api/v1/users/login HTTP/1.1" 200 513 "-" "PostmanRuntime/7.41.1"
+
+info: ::1 - - [20/Aug/2024:12:35:14 +0000] "POST /api/v1/books/admin HTTP/1.1" 201 281 "-" "PostmanRuntime/7.41.1"
+

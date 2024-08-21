@@ -10,7 +10,7 @@ export default (sequelize, DataTypes) => {
     public email;
     public password;
     public mobileNo;
-    public role: { enum: ['admin', 'user'] };
+    public role:string
 
    
     static associate(models) {

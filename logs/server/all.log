@@ -316,3 +316,16 @@ error:
     method - POST 
     IP - ::1
    {"timestamp":"2024-08-20T12:27:43.772Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-08-20T12:28:32.810Z"}
+info: Connected to the database. {"timestamp":"2024-08-20T12:28:33.138Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'quantity')
+    at CartService.<anonymous> (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\src\services\order.service.ts:36:18)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\admin\Desktop\fundoo_Notes\newBookStore\BookStore\src\services\order.service.ts:28:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/order 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-08-20T12:28:37.076Z"}
