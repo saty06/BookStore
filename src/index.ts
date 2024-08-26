@@ -11,7 +11,7 @@ import Logger from './config/logger';
 
 import morgan from 'morgan';
 
-
+import session from 'express-session';
 import swaggerUi from 'swagger-ui-express';
 const swaggerDocument = require('./doc/swagger-output.json');
 
@@ -43,8 +43,20 @@ class App {
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(express.json());
     this.app.use(morgan('combined', { stream: this.logStream }));
-  }
+  //   this.app.use(
+  //     session({
+  //       secret: process.env.SESSION_SECRET ,
+  //       resave: false, 
+  //       saveUninitialized: false, 
+  //       cookie: {
+  //         maxAge: 1000 * 60 * 60 * 24, // 1 day
+  //         httpOnly: true, 
+  //       },
+  //     })
+  //   );
+   }
 
+  
   public initializeRoutes(): void {
     this.app.use(`/api/${this.api_version}`, routes());
     this.app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
