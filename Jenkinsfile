@@ -6,7 +6,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Cloning the repository from GitHub
-                git branch: 'user', url: 'https://github.com/saty06/BookStore/tree/main'
+                git branch: 'user', url: 'https://github.com/saty06/BookStore.git '
             }
         }
 
